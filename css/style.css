@@ -1259,3 +1259,779 @@ img {
         transform: none;
     }
 }
+
+/* =====================================================
+   EDUVANCE ACADEMY - WEBSITE UPGRADE
+   Add this section at the END of style.css
+===================================================== */
+
+
+/* DEMO NOTICE */
+
+.demo-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    padding: 10px 20px;
+
+    background: rgba(120, 149, 255, 0.09);
+
+    border-bottom: 1px solid var(--border);
+
+    text-align: center;
+}
+
+.demo-banner span {
+    padding: 4px 9px;
+
+    border-radius: 5px;
+
+    background: var(--primary-glow);
+
+    color: var(--primary);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.demo-banner p {
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+
+/* HERO PROGRAM LABEL */
+
+.hero-programs {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 9px 13px;
+
+    background: var(--surface-2);
+
+    border: 1px solid var(--border);
+
+    border-radius: 7px;
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+
+/* IMPROVED HERO IMAGE */
+
+.hero-image {
+    background: var(--surface-2);
+}
+
+.hero-image-wrap {
+    isolation: isolate;
+}
+
+.hero-image-wrap::after {
+    content: "";
+
+    position: absolute;
+
+    inset: -12px;
+
+    z-index: -1;
+
+    border: 1px solid var(--border);
+
+    border-radius: 25px;
+
+    pointer-events: none;
+}
+
+
+/* COURSE DURATION */
+
+.course-duration {
+    display: inline-block;
+
+    margin-bottom: 13px;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+
+    background: var(--primary-glow);
+
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* COURSE CARDS */
+
+.course-card {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100%;
+}
+
+.course-card p {
+    min-height: 75px;
+}
+
+.course-card .course-tags {
+    margin-top: auto;
+
+    margin-bottom: 20px;
+}
+
+.course-card > a {
+    display: inline-block;
+
+    margin-top: auto;
+
+    padding-top: 13px;
+
+    border-top: 1px solid var(--border);
+}
+
+
+/* FILTER BUTTONS */
+
+.course-filter {
+    row-gap: 12px;
+}
+
+.filter-btn {
+    min-height: 43px;
+
+    cursor: pointer;
+}
+
+.filter-btn:focus-visible {
+    outline: 2px solid var(--primary);
+
+    outline-offset: 4px;
+}
+
+
+/* TEACHING AREA CARDS */
+
+.teaching-card {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100%;
+}
+
+.teaching-icon {
+    display: grid;
+
+    place-items: center;
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 25px 22px 0;
+
+    border-radius: 15px;
+
+    background: var(--primary-glow);
+
+    border: 1px solid var(--border);
+
+    font-size: 30px;
+}
+
+.teaching-card .faculty-info {
+    flex: 1;
+}
+
+.sample-label {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: var(--primary);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.teaching-card .faculty-info p {
+    line-height: 1.8;
+}
+
+.teaching-card .course-tags {
+    margin-top: 18px;
+}
+
+
+/* FACULTY / DEMO CONTENT NOTE */
+
+.demo-profile-note {
+    max-width: 850px;
+
+    margin: 0 auto 75px;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+}
+
+.demo-profile-note h2 {
+    margin: 15px 0;
+
+    color: var(--heading);
+
+    font-size: 25px;
+}
+
+.demo-profile-note p {
+    color: var(--text);
+
+    font-size: 13px;
+
+    line-height: 1.9;
+}
+
+.demo-label {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    background: var(--primary-glow);
+
+    color: var(--primary);
+
+    border-radius: 5px;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* CONTACT DEMO NOTICE */
+
+.demo-contact-note {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    background: var(--surface);
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    line-height: 1.8;
+}
+
+
+/* CONTACT FORM IMPROVEMENTS */
+
+.enquiry-form {
+    align-self: start;
+}
+
+.enquiry-form input,
+.enquiry-form select,
+.enquiry-form textarea {
+    min-height: 47px;
+
+    font-size: 13px;
+}
+
+.enquiry-form textarea {
+    min-height: 120px;
+}
+
+.enquiry-form input::placeholder,
+.enquiry-form textarea::placeholder {
+    color: var(--muted);
+    opacity: .8;
+}
+
+.enquiry-form select {
+    cursor: pointer;
+}
+
+.enquiry-form button {
+    cursor: pointer;
+}
+
+
+/* FORM FOCUS ACCESSIBILITY */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--primary);
+
+    outline-offset: 3px;
+}
+
+
+/* FLOATING WHATSAPP BUTTON */
+
+.floating-whatsapp {
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    z-index: 900;
+
+    width: 55px;
+
+    height: 55px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25D366;
+
+    color: white;
+
+    font-size: 28px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+
+    transition: .25s;
+}
+
+.floating-whatsapp:hover {
+    transform: translateY(-5px) scale(1.04);
+
+    background: #1ebe5d;
+}
+
+
+/* BACK TO TOP */
+
+.back-to-top {
+    position: fixed;
+
+    right: 28px;
+
+    bottom: 95px;
+
+    z-index: 899;
+
+    width: 42px;
+
+    height: 42px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: var(--surface);
+
+    color: var(--heading);
+
+    font-size: 21px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(10px);
+
+    transition: .25s;
+}
+
+.back-to-top.show {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    border-color: var(--primary);
+
+    color: var(--primary);
+}
+
+
+/* IMPROVED CONTACT MAP */
+
+.map-section iframe {
+    display: block;
+
+    width: 100%;
+
+    max-width: 100%;
+}
+
+
+/* IMPROVED BUTTON INTERACTIONS */
+
+.btn,
+.filter-btn,
+.theme-toggle,
+.menu-toggle {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active,
+.filter-btn:active {
+    transform: scale(.98);
+}
+
+
+/* BETTER COURSE PAGE SPACING */
+
+.course-grid-page {
+    align-items: stretch;
+
+    row-gap: 25px;
+}
+
+.course-note {
+    margin: 0 9% 80px;
+}
+
+
+/* FOOTER IMPROVEMENTS */
+
+.footer-column a {
+    transition: color .2s, transform .2s;
+}
+
+.footer-column a:hover {
+    transform: translateX(3px);
+}
+
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 1050px) {
+
+    .hero {
+        gap: 45px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .contact-layout {
+        gap: 40px;
+    }
+
+    .footer-grid {
+        gap: 30px;
+    }
+
+}
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 750px) {
+
+    .demo-banner {
+        padding: 10px 15px;
+
+        gap: 7px;
+    }
+
+    .demo-banner p {
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: auto;
+
+        gap: 55px;
+
+        padding-top: 55px;
+
+        padding-bottom: 75px;
+    }
+
+    .hero-programs {
+        font-size: 9px;
+
+        letter-spacing: .7px;
+    }
+
+    .hero h1 {
+        letter-spacing: -1.8px;
+
+        line-height: 1.15;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .hero-image-wrap {
+        width: calc(100% - 20px);
+    }
+
+    .floating-card {
+        padding: 11px 13px;
+    }
+
+    .floating-card strong {
+        font-size: 11px;
+    }
+
+    .floating-card small {
+        font-size: 9px;
+    }
+
+    .trust-strip {
+        gap: 22px 15px;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .demo-profile-note {
+        margin-bottom: 50px;
+
+        padding: 25px;
+    }
+
+    .demo-profile-note h2 {
+        font-size: 21px;
+    }
+
+    .contact-layout {
+        gap: 35px;
+    }
+
+    .enquiry-form {
+        padding: 25px;
+    }
+
+    .course-note {
+        margin: 0 6% 60px;
+
+        padding: 28px;
+    }
+
+    .map-section {
+        padding-left: 6%;
+
+        padding-right: 6%;
+    }
+
+    .map-section iframe {
+        height: 300px;
+    }
+
+}
+
+
+/* SMALL MOBILE SCREENS */
+
+@media (max-width: 480px) {
+
+    .site-header {
+        min-height: 72px;
+    }
+
+    .brand-icon {
+        width: 39px;
+
+        height: 39px;
+
+        font-size: 19px;
+    }
+
+    .brand-text strong {
+        font-size: 15px;
+    }
+
+    .brand-text small {
+        font-size: 8px;
+    }
+
+    .nav-links {
+        top: 72px;
+    }
+
+    .nav-actions {
+        gap: 8px;
+    }
+
+    .theme-toggle,
+    .menu-toggle {
+        width: 39px;
+
+        height: 39px;
+    }
+
+    .hero {
+        padding-top: 45px;
+
+        gap: 45px;
+    }
+
+    .hero h1 {
+        font-size: clamp(34px, 9vw, 40px);
+    }
+
+    .hero-programs {
+        line-height: 1.8;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-trust {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .hero-image {
+        height: 260px;
+    }
+
+    .floating-card {
+        max-width: 175px;
+    }
+
+    .floating-top {
+        top: 15px;
+    }
+
+    .floating-bottom {
+        bottom: 15px;
+    }
+
+    .trust-strip {
+        padding: 28px 7%;
+    }
+
+    .section-heading h2,
+    .section-content h2 {
+        font-size: 29px;
+    }
+
+    .course-card {
+        padding: 23px;
+    }
+
+    .teaching-icon {
+        margin: 22px 22px 0;
+    }
+
+    .enquiry-form {
+        padding: 20px;
+    }
+
+    .course-note {
+        margin-left: 5%;
+
+        margin-right: 5%;
+
+        padding: 23px;
+    }
+
+    .course-note h2 {
+        font-size: 23px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .floating-whatsapp {
+        right: 17px;
+
+        bottom: 18px;
+
+        width: 49px;
+
+        height: 49px;
+    }
+
+    .back-to-top {
+        right: 21px;
+
+        bottom: 78px;
+    }
+
+}
+
+
+/* REDUCED MOTION SUPPORT */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+
+        transition-duration: .01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+
+        transform: none;
+    }
+
+}
